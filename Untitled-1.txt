@@ -1,0 +1,33 @@
+<!-- small box -->
+            <div class="small-box bg-danger">
+              <div class="inner">
+                <h3>
+<?php
+
+$count=0;
+$result = mysqli_query($con,"SELECT * FROM complains");
+while($row = mysqli_fetch_array($result))
+  {
+    
+$count++;
+
+
+  }
+  echo $count;
+?>
+
+
+
+
+
+
+                </h3>
+
+                <p>Complaints</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-pie-graph"></i>
+              </div>
+              <a href="complaints.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
